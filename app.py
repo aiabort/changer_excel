@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox
-import pandpas as pd
+import pandas as pd
 
 class ExcelFilterApp:
     def __init__(self, root):
