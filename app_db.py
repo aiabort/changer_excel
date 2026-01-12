@@ -142,7 +142,7 @@ class ExcelDatabaseApp:
             return
 
         # Query database
-        query = f"SELECT * FROM {self.table_name} WHERE {column} LIKE ?"
+        query = f'SELECT * FROM {self.table_name} WHERE "{column}" LIKE ?'
         cursor = self.conn.cursor()
         cursor.execute(query, ('%' + term + '%',))
         rows = cursor.fetchall()
